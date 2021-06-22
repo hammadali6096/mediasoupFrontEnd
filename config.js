@@ -17,9 +17,9 @@
      // Signaling settings (protoo WebSocket server and HTTP API server).
      https  :
      {
-         listenIp   : '0.0.0.0',
-         // NOTE: Don't change listenPort (client app assumes 4443).
-         listenPort : process.env.PROTOO_LISTEN_PORT || 4443,
+         listenIp   : '54.146.90.13',
+         // NOTE: Don't change listenPort (client app assumes 3000).
+         listenPort : process.env.PROTOO_LISTEN_PORT || 3000,
          // NOTE: Set your own valid certificate files.
          tls        :
          {

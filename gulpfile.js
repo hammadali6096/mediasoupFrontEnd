@@ -248,6 +248,7 @@ gulp.task('live', gulp.series(
 	(done) =>
 	{
 		const config = require('./config');
+		
 		browserSync(
 			{
 				open      : 'external',

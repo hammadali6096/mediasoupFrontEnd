@@ -8,7 +8,8 @@
   "main": "lib/index.jsx",
   "scripts": {
     "lint": "eslint -c .eslintrc.js --ext .js,.jsx gulpfile.js lib",
-    "start": "gulp live"
+    "start": "gulp live",
+    "deploy": "aws s3 sync public/ s3://mediasoup-app --acl public-read"
   },
   "dependencies": {
     "@babel/runtime": "^7.8.4",
@@ -30,6 +31,7 @@
     "react-draggable": "^3.3.2",
     "react-dropzone": "^10.2.1",
     "react-redux": "^7.2.0",
+    "react-scripts": "^4.0.3",
     "react-spinner": "^0.2.7",
     "react-tooltip": "^3.11.1",
     "react-transition-group": "^4.3.0",
@@ -51,7 +53,6 @@
     "browserify": "^16.5.0",
     "del": "^5.1.0",
     "envify": "^4.1.0",
-    "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-control-statements": "^2.2.1",
     "eslint-plugin-react": "^7.18.3",
